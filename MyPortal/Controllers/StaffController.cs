@@ -49,8 +49,6 @@ namespace MyPortal.Controllers
         public ActionResult Staff()
         {
             var staff = _context.Staff.ToList();
-            string passHash = Crypto.HashPassword("Muntyflumple9");
-            Console.WriteLine(passHash);
             return View(staff);
         }        
 
